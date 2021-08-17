@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/react-counter-class-context/static/js/main.dc99d28a.chunk.js",
+    "main.js.map": "/react-counter-class-context/static/js/main.dc99d28a.chunk.js.map",
+    "runtime-main.js": "/react-counter-class-context/static/js/runtime-main.7f47e564.js",
+    "runtime-main.js.map": "/react-counter-class-context/static/js/runtime-main.7f47e564.js.map",
+    "static/js/2.3fea428c.chunk.js": "/react-counter-class-context/static/js/2.3fea428c.chunk.js",
+    "static/js/2.3fea428c.chunk.js.map": "/react-counter-class-context/static/js/2.3fea428c.chunk.js.map",
+    "index.html": "/react-counter-class-context/index.html",
+    "static/js/2.3fea428c.chunk.js.LICENSE.txt": "/react-counter-class-context/static/js/2.3fea428c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f47e564.js",
+    "static/js/2.3fea428c.chunk.js",
+    "static/js/main.dc99d28a.chunk.js"
+  ]
+}
