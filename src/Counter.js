@@ -1,5 +1,6 @@
 // React allows us to write JSX, Componenet allows us to create class
 import React, { Component } from 'react';
+import { ThemeContext } from './App';
 
 // all of the code inside this class becomes react component
 export default class Counter extends Component {
@@ -17,12 +18,21 @@ export default class Counter extends Component {
     //this gets consoled everytime this component rerenders
     console.log('render counter');
     return (
-      <div>
-        <button onClick={() => this.changeCount(-1)}>-</button>
-        {/*acesses prop InitialCount passed down from App.js*/}
-        <span>{this.state.count}</span>
-        <button onClick={() => this.changeCount(+1)}>+</button>
-      </div>
+      <ThemeContext.Consumer>
+        {/*backgroundColor: theme*/}
+        {(style) => (
+          <div>
+            <button style={style} onClick={() => this.changeCount(-1)}>
+              -
+            </button>
+            {/*acesses prop InitialCount passed down from App.js*/}
+            <span>{this.state.count}</span>
+            <button style={style} onClick={() => this.changeCount(+1)}>
+              +
+            </button>
+          </div>
+        )}
+      </ThemeContext.Consumer>
     );
   }
 
